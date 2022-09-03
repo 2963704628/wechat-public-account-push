@@ -4,10 +4,10 @@ export const config = {
    */
 
   // 公众号APP_ID
-  APP_ID: "",
+  APP_ID: "wx29b4d79fee75942c",
 
   // 公众号APP_SECRET
-  APP_SECRET: "",
+  APP_SECRET: "d4ef4a60c37eb7da3d95c3f42b750608",
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如
@@ -24,7 +24,7 @@ export const config = {
    *   }, 
    * ]
    */
-  USERS: [
+  USERS: [otLFN5uTzHIaAg0gknf04yQPm-gM
     {
       // 想要发送的人的名字
       name: "老婆0",
@@ -63,7 +63,7 @@ export const config = {
   CALLBACK_TEMPLATE_ID: "zjVglIuCXo34CsraXWEio1i3P7sZJ7IQEES93lDsgc4yOU",
 
   // 接收成功回调消息的微信号，（一般来说只填自己的微信号, name填不填无所谓）
-  CALLBACK_USERS: [
+  CALLBACK_USERS: [otLFN5uTzHIaAg0gknf04yQPm-gM
     {
       // 一般都填自己
       name: "自己",
@@ -79,9 +79,9 @@ export const config = {
   /** 天气相关 */
 
   // 所在省份
-  PROVINCE: "广东",
+  PROVINCE: "陕西",
   // 所在城市
-  CITY: "惠州",
+  CITY: "咸阳",
 
   /** 重要节日相关 */
 
@@ -92,10 +92,9 @@ export const config = {
    * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
    */
   FESTIVALS: [
-    {"type": "生日", "name": "老婆", "year": "1996", "date": "09-02"},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
-    {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
-    {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
+    {"type": "生日", "name": "小李", "year": "2004", "date": "02-28"},
+    {"type": "生日", "name": "小妮", "year": "2004", "date": "05-25"},
+    {"type": "节日", "name": "恋爱纪念日", "year": "2022", "date": "06-09"},
   ],
 
   /**
@@ -113,13 +112,7 @@ export const config = {
     * */
   CUSTOMIZED_DATE_LIST: [
     // 在一起的日子
-    {"keyword": "love_day", date: "2015-05-01"},
-    // 结婚纪念日
-    {"keyword": "marry_day", date: "2020-01-04"},
-    // 退伍日, 不用可以删掉
-    {"keyword": "ex_day", date: "2022-08-31"},
-    // sakana日
-    // {"keyword": "sakana_day", date: "2022-01-06"},
+    {"keyword": "love_day", date: "2022-06-09"},
     // ... 
   ],
 
@@ -130,8 +123,6 @@ export const config = {
     * 比如：keyword: "lover_prattle" ，在测试号中就是 {{ lover_prattle.DATA }} 
     * */
   SLOT_LIST: [
-    // 这样配置的话，就会每次发送这句话
-    {"keyword": "encourage_oneself", contents: "你主要的问题在于读书太少而想得太多"},
     // 这样配置的话，就会每次随机选一句话发送
     {"keyword": "lover_prattle", contents: [
       "因为太喜欢你，所以看谁都像是情敌。",
